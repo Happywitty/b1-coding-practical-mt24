@@ -12,3 +12,6 @@ class PDController:
         self.previous_error = error
 
         return action
+    
+    def __call__(self, reference, observation):
+        return self.compute(reference, observation)
